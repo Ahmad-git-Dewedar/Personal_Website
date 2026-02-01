@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Dewedar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="videos/video-loop.mp4" />
+      </video>
+
+      <header class="header">
+        <label class="burger-menu" for="menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input class="burger-menu__checkbox" type="checkbox" id="menu" />
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="toogle">
+          <h3 class="toogle__title">Switch Theme</h3>
+          <input type="checkbox" id="toogle" class="toogle__checkbox" />
+          <label for="toogle" class="toogle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I'M A Passionate Software Engineer
+          </h1>
+
+          <p class="bio__objective">
+            My name is <span class="bio__name">Ahmad Dewedar</span>, a Student
+            at
+            <a href="https://almdrasa.com/" class="bio__almdrasa"
+              >Almdrasa.com</a
+            >, Software Engineer who publishes content on
+            <a
+              href="https://www.linkedin.com/in/ahmad-dewedar-706a4339b/"
+              class="bio__linkedin"
+              >Linkedin</a
+            >
+            and
+            <a href="https://github.com/Ahmad-git-Dewedar" class="bio__github"
+              >Github</a
+            >.
+          </p>
+
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a href="/CV/Ahmad_Dewedar_CV.pdf" class="bio__links find-out-link">
+            Download CV <span class="bio__arrow">⬇</span>
+          </a>
+        </div>
+
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="images/personal img.png"
+            alt="image of ahmad dewedar"
+          />
+        </div>
+      </section>
+
+      <section class="skills section section--with-bg" id="skills">
+        <h2 class="h2-heading">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skills__item"><div class="skills__title">HTML</div></li>
+          <li class="skills__item"><div class="skills__title">CSS</div></li>
+          <li class="skills__item"><div class="skills__title">Python</div></li>
+          <li class="skills__item"><div class="skills__title">Java</div></li>
+          <li class="skills__item"><div class="skills__title">Git</div></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="h2-heading">
+          MY FEATURED <br />
+          PROJECTS
+        </h2>
+
+        <div class="projects__main">
+          <img
+            class="projects__img"
+            src="images/project-1.png"
+            alt="Weather app Extension"
+          />
+
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Weather app <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              The weather app is an extension that shows you the daily weather
+              forecast and tells you how to deal with the weather
+            </p>
+            <a class="projects__link" href="#" target="_blank">Chrome Link</a>
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Food Ordering <br />
+              App
+            </h3>
+            <p class="projects__description">
+              The food ordering app provides delivery service and guarantees
+              that you will receive your order quickly and with high quality.
+            </p>
+            <a class="projects__link" href="#" target="_blank">Chrome Link</a>
+          </div>
+
+          <img
+            class="projects__img"
+            src="./images/project-2.png"
+            alt="Food ordering app"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2-heading">
+          What My <br />
+          Clients Says
+        </h2>
+
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Ahmed has strong technical skills and excellent communication. He
+              clearly understands requirements and knows how to turn ideas into
+              a fully functional product
+            </p>
+            <p class="clients__opinion">
+              From the first discussion to the final delivery, Ahmed showed
+              great professionalism, clear communication, and a strong
+              understanding of modern web development
+            </p>
+            <p class="clients__opinion">
+              The project was handled with great care and attention. Ahmed made
+              sure every detail was polished and aligned with the original
+              vision
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time.
+          </p>
+
+          <a href="mailto:ahmaddewedar2016@gmail.com" class="contact__email">
+            ahmaddewedar2016@gmail.com
+          </a>
+
+          <div class="contact__socials">
+            <a
+              href="https://www.linkedin.com/in/ahmad-dewedar-706a4339b/"
+              class="contact__social"
+            >
+              <img src="images/brand/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://github.com/Ahmad-git-Dewedar"
+              class="contact__social"
+            >
+              <img src="images/brand/github.svg" alt="GitHub" />
+            </a>
+            <a href="#" class="contact__social">
+              <img src="images/brand/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#" class="contact__social">
+              <img src="images/brand/youtube.svg" alt="YouTube" />
+            </a>
+            <a href="#" class="contact__social">
+              <img src="images/brand/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" class="contact__social">
+              <img src="images/brand/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__formContent">
+          <h2 class="h2-heading">
+            Let's work <br />
+            Together!
+          </h2>
+
+          <form>
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                placeholder="Phone No."
+                required
+              />
+            </div>
+
+            <textarea
+              class="contact__input contact__textarea"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <input class="contact__button" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2026 by Ahmad Dewedar</footer>
+    </div>
+  </body>
+</html>

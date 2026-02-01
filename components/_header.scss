@@ -1,0 +1,102 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  top: 0;
+  z-index: -1;
+  background-color: var(--color-background);
+}
+
+.navigation {
+  transition: var(--transition-timing);
+}
+
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation__link:hover,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#clients:target) .navigation__clients,
+.container:has(#contact:target) .navigation__contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+.toogle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.toogle__title {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+
+.toogle__checkbox {
+  display: none;
+}
+
+.toogle__label {
+  width: 4.5rem;
+  height: 2.2rem;
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  padding: 0.3rem 0.4rem;
+  cursor: pointer;
+  transition: var(--transition-timing);
+  position: relative;
+}
+
+.toogle__label::after {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: block;
+  transition: var(--transition-timing);
+}
+
+.toogle__checkbox:checked + .toogle__label {
+  background-color: var(--color-white);
+  border: 0.1rem solid var(--color-black);
+}
+
+.toogle__checkbox:checked + .toogle__label::after {
+  transform: translateX(2.1rem);
+  background-color: var(--color-green);
+}
